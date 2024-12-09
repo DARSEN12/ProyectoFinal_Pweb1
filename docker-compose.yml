@@ -1,3 +1,21 @@
-# Archivo de docker compose para creacion de un volumen de Docker donde se crearan todos nuestros contenedores
-# Implementar Codigo
+version: '3.7'
+services:
+  db:
+    build: ./db
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: contrasena
+    volumes:
+      - db-data:/var/lib/mysql
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - db
+
+volumes:
+  db-data:
 
