@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Menú Superior -->
+    <nav>
+        <ul class="menu">
+            <li class="left"><a href="index.html">Volver al Inicio</a></li>
+            <li class="right"><a href="productos.html">Ver Productos</a></li>
+            <li class="right"><a href="iniciar_sesion.html">Iniciar Sesión</a></li>
+        </ul>
+    </nav>
+
+    <!-- Presentación de Diapositivas -->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="images/diapositiva1.jpg" style="width:100%">
+            <div class="text">Encuentra a tu mejor amigo</div>
+            <button class="slide-btn">Diapositiva 1</button>
+        </div>
+        <div class="mySlides fade">
+            <img src="images/diapositiva2.jpg" style="width:100%">
+            <div class="text">Todo lo que necesitas para tu mascota</div>
+            <button class="slide-btn">Diapositiva 2</button>
+        </div>
+        <div class="mySlides fade">
+            <img src="images/diapositiva3.jpg" style="width:100%">
+            <div class="text">Participa en nuestras actividades</div>
+            <button class="slide-btn">Diapositiva 3</button>
+        </div>
+
+        <!-- Flechas de navegación -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <!-- Contenido Principal -->
+    <div class="contenido">
+        <h1>Bienvenido a Nuestra Tienda de Mascotas</h1>
+        <p>Aquí puedes encontrar los mejores productos para tus mascotas y leer artículos interesantes.</p>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
